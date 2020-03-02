@@ -10,95 +10,142 @@
 <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <link rel="stylesheet" type="text/css" href="css/variables.css">
+	
 </head>
 <body>
 <div class="bg-dark">
-  <div class ="container">
-    <div class="row pt-0 pb-0">
-      <div class="navbar col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12">
-        <nav class="navbar-nav navbar-expand navbar-dark">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-item nav-link" href="#">Home</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="#">Calendar</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="#">Directory</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="#">MyUH</a></li>
-            <li class="nav-item"><a class="nav-item nav-link" href="#">Work at UH</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 align-bottom">
-        <nav class="navbar-nav navbar-expand navbar-dark justify-content-end">
-          <ul class="navbar-nav pt-2">
-            <li class="nav-item"><a class="fa fa-twitter fa-lg text-white"></a></li>
-            <li class="nav-item"><a class="fa fa-facebook fa-lg text-white"></a> </li>
-            <li class="nav-item"><a class="fa fa-instagram fa-lg text-white"></a> </li>
-            <li class="nav-item"><a class="fa fa-flickr fa-lg text-white"></a> </li>
-            <li class="nav-item"><a class="fa fa-youtube fa-lg text-white"></a></li>
-          </ul>
-        </nav>
-      </div>
-    </div>
+  <div class ="container navbar-dark">
+    
+<nav class="navbar navbar-expand-lg">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+	
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Glossary</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Help</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Feedback</a>
+      </li>
+    </ul>
   </div>
-</div>
+</nav>
+     
+    </div>
+
+  </div>
 <!-- UH System top nav bar end-->
 <div class="bg-white pt-4 pb-4">
   <div class="container">
     <div class="row">
-      <div class="col-6"><img src="images/UH_logo.png" alt="University of Hawaii" width="100%" class="img-fluid"></div>
-      <div class="col-6">
-        <div class="row justify-content-end">
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
+      <div class="col-lg-6"><img src="images/UH_logo.png" alt="University of Hawaii" width="100%" class="img-fluid"></div>
+      <div class="col-lg-6 d-flex justify-content-center">
+        <span class="uh-branding-title">Course Transfer</span>
       </div>
     </div>
   </div>
 </div>
 <!-- UH system header end-->
-<div class="bg-light pt-2 pb-2 border-top border-bottom">
-  <div class="container" >
-    <h5 class="title"><a href="index.html">UH System Course Transfer Database</a></h5>
-  </div>
-</div>
-<!-- title bar end-->
 <div class="bg-gold pt-3 pb-3">
   <div class="container search-box" >
     <form class="form-row">
-      <div class="form-group col-md-4">
+      <div class="col-md-5">
         <label for="">Transferring from</label>
 		<input type="text" class="form-control" id="" placeholder="Type your institution" >
-      </div>
-      <div class="form-group col-md-4">
-        <label for="">Transferring to</label>
-        <select class="custom-select" id="">
-          <option value="">Select a UH Campus</option>
-          <option value="HIL">UH Hilo</option>
-          <option value="MAN">UH Mānoa</option>
-          <option value="WOA">UH West Oʻahu</option>
-          <option value="HAW">Hawaiʻi Community College</option>
-          <option value="HON">Honolulu Community College</option>
-          <option value="KAP">Kapiʻolani Community College</option>
-          <option value="KAU">Kauaʻi Community College</option>
-          <option value="LEE">Leeward Community College</option>
-          <option value="MAU">UH Maui College</option>
-          <option value="WIN">Windward Community College</option>
-        </select>
       </div>
       <div class="col-md-2">
         <label for="">Subject</label>
         <input type="text" class="form-control" id="" >
       </div>
-      <div class="col-md-1">
-        <button class="btn btn-gold-search" type="submit">Search</button>
+      <div class="col-md-5">
+        <label for="">Transferring to</label>
+		  <input type="text" class="form-control" id="" placeholder="Select UH Campus" >
       </div>
+
     </form>
   </div>
 </div>
 	<!-- main content starts-->
 <div class="container pt-3 pb-3"> 
 	<!-- add the main content here-->
+	<table class="table table-striped">
+	<thead >
+		<tr class="table-header">
+		<th colspan="3">If you've taken...</th>
+		<th colspan="4">Then you may receive credit at UHM for...</th>
+		</tr>
+		</thead>
+    <thead class="text-white">
+      <tr>
+        <th scope="col" class="bg-nonuh-color">Subject</th>
+        <th scope="col" class="bg-nonuh-color">Course</th>
+        <th scope="col" class="bg-nonuh-color">Title</th>
+        <th scope="col" class="uh-manoa-color mycontent-left" width="5%">Course</th>
+        <th scope="col" class="uh-manoa-color">Credits</th>
+        <th scope="col" class="uh-manoa-color">Gen. Ed.</th>
+        <th scope="col" class="uh-manoa-color">Note</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>MATH</td>
+        <td>100</td>
+        <td>Survey of Math</td>
+        <td class="uh-manoa-color-bg1 mycontent-left">100</td>
+        <td class="uh-manoa-color-bg1">3</td>
+        <td class="uh-manoa-color-bg1">FS</td>
+        <td class="uh-manoa-color-bg1">Click here only if taken 
+          before Fall 1990</td>
+      </tr>
+      <tr>
+        <td>MATH</td>
+        <td>100</td>
+        <td>Intro to Applied Math</td>
+        <td class="uh-manoa-color-bg2 mycontent-left">100</td>
+        <td class="uh-manoa-color-bg2">3</td>
+        <td class="uh-manoa-color-bg2">FS</td>
+        <td class="uh-manoa-color-bg2"></td>
+      </tr>
+      <tr>
+        <td>MATH</td>
+        <td>100</td>
+        <td>Survey of Math</td>
+        <td class="uh-manoa-color-bg1 mycontent-left">100</td>
+        <td class="uh-manoa-color-bg1">3</td>
+        <td class="uh-manoa-color-bg1">FS</td>
+        <td class="uh-manoa-color-bg1"></td>
+      </tr>
+      <tr>
+        <td>MATH</td>
+        <td>100</td>
+        <td>Survey of Math</td>
+        <td class="uh-manoa-color-bg2 mycontent-left">100</td>
+        <td class="uh-manoa-color-bg2">3</td>
+        <td class="uh-manoa-color-bg2">FS</td>
+        <td class="uh-manoa-color-bg2"></td>
+      </tr>
+      <tr>
+        <td>MATH</td>
+        <td>100</td>
+        <td>Survey of Math</td>
+        <td class="uh-manoa-color-bg1 mycontent-left">100</td>
+        <td class="uh-manoa-color-bg1">3</td>
+        <td class="uh-manoa-color-bg1">FS</td>
+        <td class="uh-manoa-color-bg1"></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 <!-- main content ends-->
 <!--footer class="footer bg-dark pt-5 pb-5">

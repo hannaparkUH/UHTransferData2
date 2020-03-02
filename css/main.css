@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700);
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
 
 html {
     position: relative;
@@ -87,9 +88,7 @@ p{
 }
 
 /* colors */
-.bg-nonuh-color{
-	background:#333333;
-}
+
 
 .west-oahu-color{
 	background: #c41230;
@@ -97,6 +96,7 @@ p{
 .uh-manoa-color{
 	background-color: #00512f;
 }
+
 .maui-color{
 	background-color: #005a84;		
 }
@@ -121,6 +121,42 @@ p{
 .windward-color{
 	background-color: #8cc63f;
 }
+
+
+/*-------UPDATE 2/26/2020-----------*/
+
+.uh-branding-title {
+    font-family: 'Cinzel';
+    font-size: 2.2em;
+    font-style: normal;
+    font-weight: 700;
+	color:#666;
+	padding-top:10px;
+    letter-spacing: 2.2px;  
+}
+.custom-toggler.navbar-toggler { 
+    border-color: #fff; 
+} 
+
+.bg-nonuh-color{
+	background:#343a40;
+}
+.uh-manoa-color-bg1{
+	background-color: #ddf5eb;
+}
+.uh-manoa-color-bg2{
+	background-color: #effaf5;
+}
+.table-header th{
+	font-size: 1.0em;
+	font-style: italic;
+	border: 0;
+
+}
+.mycontent-left {
+  border-left: 8px double #fff;
+}
+
 
 
 
